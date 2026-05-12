@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // 🔗 Link RAW database JSON kamu di GitHub
-const DB_URL = "https://raw.githubusercontent.com/[USERNAME]/[NAMA-REPO]/main/data.json";
+const DB_URL = "https://raw.githubusercontent.com/itsmerinzz/Api/refs/heads/main/data.json";
 
 // Pengaturan ukuran & gaya tulisan (sesuai gambar kamu)
 const WIDTH = 1000;
@@ -28,7 +28,7 @@ function getGradient(ctx, x, y, width, height) {
 
 // 🎨 ENDPOINT UTAMA: Buat gambar sesuai nama pengunjung
 app.get('/api/gambar', async (req, res) => {
-  const namaCustom = req.query.nama || "MFARELS"; // Kalau kosong, pakai default
+  const namaCustom = req.query.nama || "REYSEKHA"; // Kalau kosong, pakai default
 
   try {
     // Bikin kanvas hitam
